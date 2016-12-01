@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*------------------HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #eee;
+}
+h1{
+    margin: 0;  
+    font-size: 25px;    
+}
+/*--------PARTE MENU*/
+.icon-menu .glyphicon-menu-hamburger{
+    font-size: 25px;
+    border: ridge 1px white;
+}
+.nav {
+	position: absolute;
+	top: auto;
+	left: -100%;
+	width: 100%;
+	transition: all 0.4s;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu__link {
+	display: block;
+	padding: 15px 30px;
+	background: rgba(0,0,0,.7);
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu__link:hover, .select {
+	background: white;
+	color: #4E7EB8;  
+    text-decoration: none;
+}
+
+.show {
+	left: 0;
+} 
+/*------END--PARTE MENU*/
+/*----------------END--HEADER*/
+/*------------------banner*/
+section.banner{
+    background-image: url(../img/home.jpg);    
+}
+.frase p:nth-child(1){font-size: 30px; color: #fff;}
+
+/*----------------END--BANNER*/
+/*------------------HACKATHON*/
+section.hackathon{
+    background: yellow;
+}
+section.hackathon .container{
+    margin: 20px 0;
+}
+/*----------------END--HACKATHON*/
+/*------------------CONTACTO*/
+.elemento-form{
+    margin: 5px 0;
+}
+/*----------------END--CONTACTO*/
+/*---------------------footer*/
+footer{
+    margin-top: 20px;
+    background: green;
+    padding: 10px;
+}
+footer p{
+    margin: 20px;
+    color: #fff;
+}
+footer span{
+    color: yellow;
+}
+/*----------------END--footer*/
