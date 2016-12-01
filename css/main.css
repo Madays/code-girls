@@ -8,7 +8,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 15px 40px;
-    background: #eee;
+    background: #F8F8F8;
 }
 h1{
     margin: 0;  
@@ -55,13 +55,21 @@ h1{
 /*------------------banner*/
 section.banner{
     background-image: url(../img/home.jpg);    
+    height: 650px;
+}
+.frase{
+    padding-top: 100px;
 }
 .frase p:nth-child(1){font-size: 30px; color: #fff;}
-
+section.banner button{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
 /*----------------END--BANNER*/
 /*------------------HACKATHON*/
 section.hackathon{
-    background: yellow;
+    background: #FFFF00;
 }
 section.hackathon .container{
     margin: 20px 0;
@@ -75,7 +83,7 @@ section.hackathon .container{
 /*---------------------footer*/
 footer{
     margin-top: 20px;
-    background: green;
+    background: #4497A3;
     padding: 10px;
 }
 footer p{
@@ -86,3 +94,8 @@ footer span{
     color: yellow;
 }
 /*----------------END--footer*/
+@media screen and (min-width: 768px){
+    .frase{
+    padding-top: 280px;
+    }    
+}
