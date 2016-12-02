@@ -88,6 +88,9 @@ section.hackathon .container{
 .elemento-form{
     margin: 5px 0;
 }
+section.contacto form button{
+    margin-left: 15px;
+}
 /*----------------END--CONTACTO*/
 /*---------------------footer*/
 footer{
