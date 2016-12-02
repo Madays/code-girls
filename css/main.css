@@ -10,7 +10,6 @@ body{
 /*-------HEADER------*/
 header{
     background: #F8F8F8;
-    margin-top: 7px;
 }
 header a,header a:hover{
     text-decoration: none;
