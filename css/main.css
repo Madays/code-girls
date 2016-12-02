@@ -3,62 +3,50 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Arimo', sans-serif;    
+}
 /*------------------HEADER*/
+/*-------HEADER------*/
 header{
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 40px;
-    background: #F8F8F8;
+    background: #F8F8F8;    
 }
-h1{
-    margin: 0;  
-    font-size: 25px;    
+header h1{
+    display: inline-block;
+    margin: 7px;
 }
-/*--------PARTE MENU*/
-.icon-menu .glyphicon-menu-hamburger{
-    font-size: 25px;
-    border: ridge 1px white;
-}
-.nav {
-	position: absolute;
-	top: auto;
-	left: -100%;
-	width: 100%;
-	transition: all 0.4s;
-}
-
-.menu {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-.menu__link {
+nav li a{
 	display: block;
-	padding: 15px 30px;
-	background: rgba(0,0,0,.7);
+	padding: 15px 15px;
+	transition: all 0.2s;
+	border-radius: 6px;
+}
+nav li a:hover, nav li a:focus{
 	text-decoration: none;
-	color: #fff;
+	outline: none;
+	background: rgba(81, 114, 160,.6);
+    color: #fff;
 }
-
-.menu__link:hover, .select {
-	background: white;
-	color: #4E7EB8;  
-    text-decoration: none;
+#main-navigation
+{
+	z-index: 10;
+	position: absolute;
+	right: 10px;
+	margin: 10px 0 0 0;
 }
-
-.show {
-	left: 0;
-} 
+#main-navigation ul{
+    list-style: none;    
+}
+/*-----END--header------*/
 /*------END--PARTE MENU*/
 /*----------------END--HEADER*/
 /*------------------banner*/
 section.banner{
-    background-image: url(../img/home.jpg);    
-    height: 650px;
+    background-image: url(../img/home.jpg); 
+    background-size: cover;
 }
-.frase{
-    padding-top: 100px;
+.contenedor-banner{
+    padding: 20px 20px 60px 20px;
 }
 .frase p:nth-child(1){font-size: 30px; color: #fff;}
 section.banner button{
@@ -67,6 +55,11 @@ section.banner button{
     margin: 0 auto;
 }
 /*----------------END--BANNER*/
+/*------------------DOCUMENTAL*/
+section.documental{
+    margin: 10px 0;
+}
+/*----------------END--DOCUMENTAL*/
 /*------------------HACKATHON*/
 section.hackathon{
     background: #FFFF00;
@@ -98,4 +91,20 @@ footer span{
     .frase{
     padding-top: 280px;
     }    
+    /*a:hover{
+        text-decoration: none;
+    }
+.icon-menu {
+		display: none;
+	}
+    ul.menu{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li.menu__item{
+        padding: 10px;
+    }*/
+    
 }

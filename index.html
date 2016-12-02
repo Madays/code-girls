@@ -4,29 +4,51 @@
 	<meta charset="UTF-8">
 	<title>Coder Girl</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <h1>Code Girls</h1>
-        <span class="icon-menu" id="btn-menu">
-            <span class="glyphicon glyphicon-menu-hamburger"></span>        
-        </span>
-        <nav class="nav" id="nav">
-            <ul class="menu">
-				<li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
-				<li class="menu__item"><a class="menu__link" href="#documental">Documental</a></li>
-				<li class="menu__item"><a class="menu__link" href="#hackathon">Hackathon</a></li>
-				<li class="menu__item"><a class="menu__link" href="#contacto">Contacto</a></li>
-            </ul>	
-        </nav>
+        <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <h1>Code Girls</h1>
+            </div>
+            <div class="col-xs-12 col-md-8">    
+                <div class="text-right visible-xs">
+					<button class="btn btn-primary" data-toggle="collapse" data-target="#main-navigation">Menú</button>
+				</div>   
+                <nav class="hidden-xs">
+                    <ul class="desktop-menu list-inline text-right">
+                        <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#documental">Documental</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#hackathon">Hackathon</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>                                          
+                </div>
+        </div> 
+                        <nav class="visible-xs">
+                            <div id="main-navigation" class="collapse">
+                                <ul  class="mobile-menu text-right">
+                                    <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#documental">Documental</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#hackathon">Hackathon</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#contacto">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+        </div>  
     </header>	
     <section class="banner">
-        <div class="frase text-center">
-            <p>CHICAS QUE CAMBIAN EL MUNDO</p>
-            <p>¡Participa en nuestras actividades!</p>
+        <div class="contenedor-banner">
+            <div class="frase text-center">
+                <p>CHICAS QUE CAMBIAN EL MUNDO</p>
+                <p>¡Participa en nuestras actividades!</p>
+            </div>
+            <button class="btn btn-defaul btn-primary">Inscribete</button>
         </div>
-        <button class="btn btn-defaul btn-primary">Inscribete</button>
     </section>
     <section class="documental container" id="documental">
        <h2 class="text-center">VE NUESTRO DOCUMENTAL</h2>
@@ -37,7 +59,9 @@
                 De la competencia expuesta en el documental participaron 300 equipos, de los cuales llegaron a la semifinal, luego seis resultaron finalistas y finalmente el ganador recibió un premio de 10000 dólares</p>   
            </div>
            <div class="col-xs-12 col-md-6">
-               <iframe src="" frameborder="0"></iframe>
+               <div class="embed-responsive embed-responsive-16by9">
+				    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cRb5iel-3Ck" frameborder="0" allowfullscreen></iframe>
+				</div>               
            </div>
        </div>            
     </section>
