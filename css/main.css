@@ -73,8 +73,15 @@ section.banner button{
 section.documental{
     margin: 10px 0;
 }
-
 /*----------------END--DOCUMENTAL*/
+section.up{
+    position: fixed;
+    top: 80%;
+    right: 0;
+}
+section.up img{
+    width: 50px;
+}
 /*------------------HACKATHON*/
 section.hackathon{
     background: #FFFF00;
