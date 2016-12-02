@@ -5,19 +5,19 @@
 	<title>Coder Girl</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/queries.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
         <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <h1>Code Girls</h1>
+            <div class="col-xs-9 col-sm-4">
+                <h1><a href="index.html">Code Girls</a></h1>
             </div>
-            <div class="col-xs-12 col-md-8">    
+            <div class="col-xs-3 col-sm-8">    
                 <div class="text-right visible-xs">
-					<button class="btn btn-primary" data-toggle="collapse" data-target="#main-navigation">Menú</button>
+					<button class="btn" data-toggle="collapse" data-target="#main-navigation">Menú</button>
 				</div>   
                 <nav class="hidden-xs">
                     <ul class="desktop-menu list-inline text-right">
@@ -29,27 +29,29 @@
                 </nav>                                          
                 </div>
         </div> 
-                        <nav class="visible-xs">
-                            <div id="main-navigation" class="collapse">
-                                <ul  class="mobile-menu text-right">
-                                    <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
-                                    <li class="menu__item"><a class="menu__link" href="#documental">Documental</a></li>
-                                    <li class="menu__item"><a class="menu__link" href="#hackathon">Hackathon</a></li>
-                                    <li class="menu__item"><a class="menu__link" href="#contacto">Contacto</a></li>
-                                </ul>
-                            </div>
-                        </nav>
+            <nav class="visible-xs">
+                <div id="main-navigation" class="collapse">
+                    <ul  class="mobile-menu text-right">
+                        <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#documental">Documental</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#hackathon">Hackathon</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>  
-    </header>	
-    <section class="banner">
-        <div class="contenedor-banner">
-            <div class="frase text-center">
-                <p>CHICAS QUE CAMBIAN EL MUNDO</p>
-                <p>¡Participa en nuestras actividades!</p>
+    </header>   	
+        <section class="banner">  
+            <div class="contenedor-banner">
+                <div class="box-banner">         
+                    <div class="frase text-center">
+                        <p id="frase-uno">CHICAS QUE CAMBIAN EL MUNDO</p>
+                        <p>¡Participa en nuestras actividades!</p>
+                    </div>
+                    <button class="btn btn-defaul btn-primary">Inscribete</button>
+                </div> 
             </div>
-            <button class="btn btn-defaul btn-primary">Inscribete</button>
-        </div>
-    </section>
+        </section>    
     <section class="documental container" id="documental">
        <h2 class="text-center">VE NUESTRO DOCUMENTAL</h2>
        <div class="row">
@@ -114,7 +116,6 @@
     <footer>
         <p>&copy; 2016 Code Girl. Diseñado por <span>Laboratoria</span></p>    
     </footer>
-    <script src="js/menu.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
